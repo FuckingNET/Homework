@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw1.7" />
+        <entry key="$PROJECT_DIR$" value="hw1.9" />
       </map>
     </option>
   </component>
@@ -68,7 +68,8 @@
       <workItem from="1673900603938" duration="4121000" />
       <workItem from="1673961749680" duration="3290000" />
       <workItem from="1674163582851" duration="7710000" />
-      <workItem from="1674587057648" duration="4276000" />
+      <workItem from="1674587057648" duration="4434000" />
+      <workItem from="1674754879488" duration="1048000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1673540029460</created>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674588362598</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Homework done">
+      <created>1674591807188</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674591807188</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
