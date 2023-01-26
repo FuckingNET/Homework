@@ -8,82 +8,112 @@ public class Main {
         task6();
         task7();
         task8();
-        task9();
-        System.out.println("Задача 10");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println("2 * " + i + " = " + i * 2);
-        }
-    }
-
-    private static void task9() {
-        System.out.println("Задача 9");
-        int salary = 29000;
-        int total = 0;
-        for (int i = 1; i <= 12; i++) {
-            total = total + total/100;
-            total = total + salary;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
-        }
     }
 
     private static void task8() {
         System.out.println("Задача 8");
-        int salary = 29000;
-        int total = 0;
-        for (int i = 1; i <= 12; i++) {
-            total = total + salary;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
-        }
-    }
+        int now = 2023;
+        int past = now - 200;
+        int future = now + 100;
 
-    private static void task7() {
-        System.out.println("Задача 7");
-        for (int i = 1; i <= 512; i = i * 2) {
-            System.out.println(i);
-        }
-    }
-
-    private static void task6() {
-        System.out.println("Задача 6");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.println(i);
-        }
-    }
-
-    private static void task5() {
-        System.out.println("Задача 5");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным");
-        }
-    }
-
-    private static void task4() {
-        System.out.println("Задача 4");
-        for (int i = 10; i >= -10; i--) {
-            System.out.println(i);
-        }
-    }
-
-    private static void task3() {
-        System.out.println("Задача 3");
-        for (int i = 0; i <= 17; i++) {
-            if (i % 2 == 0) {
+        for (int i = past; i < future; i++) {
+            if (i % 79 == 0) {
                 System.out.println(i);
             }
         }
     }
 
+    private static void task7() {
+        System.out.println("Задача 7");
+        int friday = 2;
+        int day = 0;
+        System.out.println("Сегодня пятница, "+ friday +"-е число. Необходимо подготовить отчет");
+        while (day <= 31) {
+            if (friday == day - 7) {
+                friday = day;
+                System.out.println("Сегодня пятница, "+ friday +"-е число. Необходимо подготовить отчет");
+            }
+            day++;
+        }
+    }
+
+    private static void task6() {
+        System.out.println("Задача 6");
+        double percent = 0.07;
+        int countMonth = 0;
+        double total = 15000;
+        while (countMonth < 1092) {
+            total = total + (total * percent);
+            countMonth++;
+            if (countMonth % 6 == 0) {
+                System.out.println("Месяц: " + countMonth);
+                System.out.printf("Накоплений: %f%n", total);
+            }
+        }
+    }
+
+    private static void task5() {
+        System.out.println("Задача 5");
+        double percent = 0.07;
+        int countMonth = 0;
+        double total = 15000;
+        while (total <= 12_000_000) {
+            total = total + (total * percent);
+            countMonth++;
+            if (countMonth % 6 == 0) {
+                System.out.println("Месяц: " + countMonth);
+                System.out.printf("Накоплений: %f%n", total);
+            }
+        }
+    }
+
+    private static void task4() {
+        System.out.println("Задача 4");
+        double percent = 0.07;
+        int countMonth = 0;
+        double total = 15000;
+        while (total <= 12_000_000) {
+            total = total + (total * percent);
+            countMonth++;
+            System.out.println("Месяц: " + countMonth);
+            System.out.printf("Накоплений: %f%n", total);
+        }
+    }
+
+    private static void task3() {
+        System.out.println("Задача 3");
+        int population = 12_000_000;
+        int mortalityRate = 8;
+        int birthRate = 17;
+        for (int i = 0; i < 11; i++) {
+            int delta = (int)(population * (birthRate/(double) 1000) - population * (mortalityRate/(double) 1000));
+            population = population + delta;
+            System.out.println("Год " + i + ", чиисленность населения составляет " + population);
+        }
+    }
+
     private static void task2() {
         System.out.println("Задача 2");
-        for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
+        int i = 1;
+        while (i <= 10) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+        for (i = 10; i > 0; i--) {
+            System.out.print(i + " ");
         }
     }
 
     private static void task1() {
         System.out.println("Задача 1");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+        int salary = 15000;
+        int total = 0;
+        int countMonth = 0;
+        while (total <= 2_459_000) {
+            total = total + salary;
+            countMonth++;
+            System.out.println("Месяц " + countMonth + " сумма накоплений равна " + total + " рублей");
         }
     }
 }
