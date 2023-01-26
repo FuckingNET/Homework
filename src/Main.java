@@ -7,126 +7,116 @@ public class Main {
         task5();
         task6();
         task7();
-        task8();
     }
 
     public static void task1() {
         System.out.println("Задача 1");
-        int a = 432532;
-        System.out.println("Значение переменной a с типом int равно " + a);
-        byte b = 65;
-        System.out.println("Значение переменной b с типом byte равно " + b);
-        short c = 2345;
-        System.out.println("Значение переменной c с типом short равно " + c);
-        long d = 23526L;
-        System.out.println("Значение переменной d с типом long равно " + d);
-        float e = 235.6f;
-        System.out.println("Значение переменной e с типом float равно " + e);
-        double f = 23.647;
-        System.out.println("Значение переменной f с типом double равно " + f);
+        int age = 24;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
+        }
 
     }
 
     public static void task2() {
         System.out.println("Задача 2");
-        float a = 27.12f;
-        System.out.println("Значение переменной a с типом float равно " + a);
-        long b = 987678965549L;
-        System.out.println("Значение переменной b с типом long равно " + b);
-        double c = 2.786;
-        System.out.println("Значение переменной c с типом double равно " + c);
-        short d = 569;
-        System.out.println("Значение переменной d с типом short равно " + d);
-        short e = -159;
-        System.out.println("Значение переменной e с типом short равно " + e);
-        int f = 27897;
-        System.out.println("Значение переменной f с типом int равно " + f);
-        byte g = 67;
-        System.out.println("Значение переменной g с типом byte равно " + g);
+        int temp = 10;
+        if (temp >= 5) {
+            System.out.println("На улице " + temp + " градусов, можно идти без шапки");
+        } else {
+            System.out.println("На улице " + temp + " градусов, нужно надеть шапку");
+        }
     }
 
-    public static void task3(){
+    public static void task3() {
         System.out.println("Задача 3");
-        byte firstClass = 23;
-        byte secondClass = 27;
-        byte thirdClass = 30;
-        short allSheets = 480;
-        int sheetOnPupil = allSheets / (firstClass + secondClass + thirdClass);
-        System.out.println("На каждого ученика рассчитано " + sheetOnPupil + " листов бумаги");
+        int speed = 42;
+        if (speed >= 60) {
+            System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
 
     }
 
-    public static void task4(){
+    public static void task4() {
         System.out.println("Задача 4");
-        int minutes = 16 * 10;
-        System.out.println("За 20 минут машина произвела " + minutes + " штук бутылок");
-        int day = 1440 / 20 * minutes;
-        System.out.println("За день машина произвела " + day + " штук бутылок");
-        int threeDay = day * 3;
-        System.out.println("За 3 дня машина произвела " + threeDay + " штук бутылок");
-        int month = threeDay * 10;
-        System.out.println("За месяц машина произвела " + month + " штук бутылок");
+        int age = 14;
+        if (age >= 2 && age <= 6) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        }
+        if (age >= 7 && age <= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+        }
+        if (age > 18 && age <= 24) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+        }
+        if (age > 24) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
+        }
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        int countPaint = 120;
-        int whiteOnClass = 2;
-        int brownOnClass = 4;
-        int countClasses = countPaint / (whiteOnClass + brownOnClass);
-        int countWhite = countClasses * whiteOnClass;
-        int countBrown = countClasses * brownOnClass;
-        System.out.println("В школе, где " + countClasses + " классов, нужно " + countWhite + " банок белой краски и " + countBrown + " банок коричневой краски");
+        int age = 9;
+        if (age <= 5) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
+        }
+        if (age > 5 && age <= 14) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+        }
+        if (age > 14) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в без сопровождении взрослого");
+        }
     }
 
     public static void task6() {
         System.out.println("Задача 6");
-        int banana = 5 * 80;
-        int milk = 2 * 105;
-        int iceCream = 2 * 100;
-        int eggs = 4 * 70;
+        int allPlaces = 102;
+        int sitPlaces = 60;
+        int ticket = 27;
 
-        int sumWeight = banana + milk + iceCream + eggs;
-        float sumWeightKilo = sumWeight / 1000f;
-        System.out.println(sumWeight + " грамм");
-        System.out.println(sumWeightKilo + " килограмм");
+        if (ticket > sitPlaces && ticket <= allPlaces) {
+            System.out.println("В вагоне есть стоячие места");
+        }
+        if (ticket <= sitPlaces) {
+            System.out.println("В вагоне есть сидячие места");
+        }
+        if (ticket > allPlaces){
+            System.out.println("В вагоне нет мест");
+        }
+
     }
 
     public static void task7() {
         System.out.println("Задача 7");
-        int weight = 7;
-        float firstDiet = weight / 0.25f;
-        float secondDiet = weight / 0.5f;
-        System.out.println("Если спортсмен будет терять 250 грамм в день, потребуется " + firstDiet + " дней");
-        System.out.println("Если спортсмен будет терять 500 грамм в день, потребуется " + secondDiet + " дней");
+        int one = 1;
+        int two = 2;
+        int three = 3;
 
-    }
+        if (one > two){
+            if (two > three) {
+                System.out.println(one);
+            } else {
+                if (one > three) {
+                    System.out.println(one);
+                } else {
+                    System.out.println(three);
+                }
+            }
+        } else {
+            if (one > three) {
+                System.out.println(two);
+            } else {
+                if (two > three) {
+                    System.out.println(two);
+                } else {
+                    System.out.println(three);
+                }
+            }
+        }
 
-    public static void task8() {
-        System.out.println("Задача 8");
-        int salaryMasha = 67760;
-        int salaryDenis = 83690;
-        int salaryKristina = 76230;
-        float percent = 0.1f;
-
-        int salaryOfYearMasha = salaryMasha * 12;
-        int salaryOfYearDenis = salaryDenis * 12;
-        int salaryOfYearKristina = salaryKristina * 12;
-
-        float newSalaryMasha = (salaryMasha * percent) + salaryMasha;
-        float newSalaryDenis = (salaryDenis * percent) + salaryDenis;
-        float newSalaryKristina = (salaryKristina * percent) + salaryKristina;
-
-        float newSalaryOfYearMasha = newSalaryMasha * 12;
-        float newSalaryOfYearDenis = newSalaryDenis * 12;
-        float newSalaryOfYearKristina = newSalaryKristina * 12;
-
-        float differenceMasha = newSalaryOfYearMasha - salaryOfYearMasha;
-        float differenceDenis = newSalaryOfYearDenis - salaryOfYearDenis;
-        float differenceKristina = newSalaryOfYearKristina - salaryOfYearKristina;
-
-        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + differenceMasha + " рублей");
-        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + differenceDenis + " рублей");
-        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + differenceKristina + " рублей");
     }
 }
