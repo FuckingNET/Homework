@@ -1,65 +1,61 @@
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
-        task4();
-    }
-
-    private static void task4() {
-        System.out.println("Задача 4");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >= 0; i--) {
-            System.out.print(reverseFullName[i]);
-        }
     }
 
     private static void task3() {
         System.out.println("Задача 3");
-        int[] arr = generateRandomArray();
-        int total = 0;
-        double avg;
-        for (int elem : arr) {
-            total = total + elem;
-        }
-        avg = (double) total/arr.length;
-        System.out.printf("Средняя сумма трат за месяц составила %.2f рублей", avg);
+        int deliveryDistance = 95;
+        System.out.println(timeDelivery(deliveryDistance));
     }
 
     private static void task2() {
         System.out.println("Задача 2");
-        int[] arr = generateRandomArray();
-        int min = 200_000;
-        int max = 100_000;
-        for (int elem : arr) {
-            if (elem < min) {
-                min = elem;
-            }
-            if (elem > max) {
-                max = elem;
-            }
-        }
-        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
+        int clientDeviceYear = 2018;
+        int os = 1;
+        versionApp(os, clientDeviceYear);
     }
 
     private static void task1() {
         System.out.println("Задача 1");
-        int[] arr = generateRandomArray();
-        int total = 0;
-        for (int elem : arr) {
-            total = total + elem;
-        }
-        System.out.println("Сумма трат за месяц составила " + total + " рублей");
+        int year = 2023;
+        isLeapYear(year);
     }
 
-    public static int[] generateRandomArray() {
-        Random random = new Random();
-        int[] arr = new int[30];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100_000) + 100_000;
+    private static int timeDelivery(int deliveryDistance) {
+        int deliveryDays = 1;
+        if (deliveryDistance > 20) {
+            deliveryDays++;
         }
-        return arr;
+        if (deliveryDistance > 60) {
+            deliveryDays++;
+        }
+        return deliveryDays;
+    }
+
+    public static void versionApp(int os, int releaseDate) {
+        if (os == 1) {
+            if (releaseDate < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            }
+        } else {
+            if (releaseDate < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            }
+        }
+    }
+
+    public static void isLeapYear(int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
     }
 }
