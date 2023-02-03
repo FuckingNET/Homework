@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c02763-24e6-4769-9d24-3317628ff68d" name="Changes" comment="Homework done">
+      <change afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw1.9" />
+        <entry key="$PROJECT_DIR$" value="hw1.10" />
       </map>
     </option>
   </component>
@@ -43,7 +52,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="pro.sky.java.course1.homework12.Main" />
       <module name="Homework1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,7 +78,8 @@
       <workItem from="1673961749680" duration="3290000" />
       <workItem from="1674163582851" duration="7710000" />
       <workItem from="1674587057648" duration="4434000" />
-      <workItem from="1674754879488" duration="1048000" />
+      <workItem from="1674754879488" duration="1658000" />
+      <workItem from="1675283633840" duration="2615000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1673540029460</created>
@@ -127,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674591807188</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Homework done">
+      <created>1674755935939</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674755935939</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
