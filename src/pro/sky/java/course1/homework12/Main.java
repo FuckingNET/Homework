@@ -10,5 +10,9 @@ public class Main {
 
         book1.setYear(1868);
 
+        System.out.println(dostaevsky.hashCode());
+        System.out.println(pushkin.equals(dostaevsky));
+        System.out.println(book2);
+
     }
 }

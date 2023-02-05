@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c02763-24e6-4769-9d24-3317628ff68d" name="Changes" comment="Homework done">
-      <change afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,8 @@
       <workItem from="1674163582851" duration="7710000" />
       <workItem from="1674587057648" duration="4434000" />
       <workItem from="1674754879488" duration="1658000" />
-      <workItem from="1675283633840" duration="2615000" />
+      <workItem from="1675283633840" duration="3527000" />
+      <workItem from="1675632934426" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1673540029460</created>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674755935939</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Homework done">
+      <created>1675286899877</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675286899877</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
