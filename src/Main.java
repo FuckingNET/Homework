@@ -1,61 +1,83 @@
 public class Main {
+    private static final Employee[] employees = new Employee[10];
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
+        employees[0] = new Employee("test", 1, 200);
+        employees[1] = new Employee("test1", 1, 200);
+        employees[2] = new Employee("test2", 4, 600);
+        employees[3] = new Employee("test3", 3, 100);
+        employees[4] = new Employee("test4", 5, 700);
+        employeeList();
+        sumSalary();
+        allFullName();
+        minSalary();
+        maxSalary();
+        avgSalary();
+
     }
 
-    private static void task3() {
-        System.out.println("Задача 3");
-        int deliveryDistance = 95;
-        System.out.println(timeDelivery(deliveryDistance));
-    }
-
-    private static void task2() {
-        System.out.println("Задача 2");
-        int clientDeviceYear = 2018;
-        int os = 1;
-        versionApp(os, clientDeviceYear);
-    }
-
-    private static void task1() {
-        System.out.println("Задача 1");
-        int year = 2023;
-        isLeapYear(year);
-    }
-
-    private static int timeDelivery(int deliveryDistance) {
-        int deliveryDays = 1;
-        if (deliveryDistance > 20) {
-            deliveryDays++;
-        }
-        if (deliveryDistance > 60) {
-            deliveryDays++;
-        }
-        return deliveryDays;
-    }
-
-    public static void versionApp(int os, int releaseDate) {
-        if (os == 1) {
-            if (releaseDate < 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-        } else {
-            if (releaseDate < 2015) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+    public static void employeeList() {
+        for (Employee e : employees) {
+            if (e != null) {
+                System.out.println(e);
             }
         }
     }
 
-    public static void isLeapYear(int year) {
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-            System.out.println(year + " год является високосным");
-        } else {
-            System.out.println(year + " год не является високосным");
+    public static void sumSalary() {
+        int sum = 0;
+        for (Employee e : employees) {
+            if (e != null) {
+                sum += e.getSalary();
+            }
+        }
+        System.out.println(sum);
+    }
+
+    public static void minSalary() {
+        int minSalary = Integer.MAX_VALUE;
+        Employee employeeMinSalary = null;
+        for (Employee e : employees) {
+            if (e != null) {
+                if (e.getSalary() < minSalary) {
+                    minSalary = e.getSalary();
+                    employeeMinSalary = e;
+                }
+            }
+        }
+        System.out.println(employeeMinSalary);
+    }
+
+    public static void maxSalary() {
+        int maxSalary = Integer.MIN_VALUE;
+        Employee employeeMaxSalary = null;
+        for (Employee e : employees) {
+            if (e != null) {
+                if (e.getSalary() > maxSalary) {
+                    maxSalary = e.getSalary();
+                    employeeMaxSalary = e;
+                }
+            }
+        }
+        System.out.println(employeeMaxSalary);
+    }
+
+    public static void avgSalary() {
+        double sum = 0;
+        int count = 0;
+        for (Employee e : employees) {
+            if (e != null) {
+                sum += e.getSalary();
+                count++;
+            }
+        }
+        System.out.println(sum/count);
+    }
+
+    public static void allFullName() {
+        for (Employee e : employees) {
+            if (e != null) {
+                System.out.println(e.getFullName());
+            }
         }
     }
 }
