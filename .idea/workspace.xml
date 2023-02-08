@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65c02763-24e6-4769-9d24-3317628ff68d" name="Changes" comment="Homework done" />
+    <list default="true" id="65c02763-24e6-4769-9d24-3317628ff68d" name="Changes" comment="course work">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="hw1.11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/axel/IdeaProjects/Homework",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +73,7 @@
       <workItem from="1674163582851" duration="7710000" />
       <workItem from="1674587057648" duration="4276000" />
       <workItem from="1675063528780" duration="3644000" />
+      <workItem from="1675865764579" duration="234000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1673540029460</created>
@@ -127,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675262740773</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="course work">
+      <created>1675865928101</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675865928101</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Homework done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework done" />
+    <MESSAGE value="course work" />
+    <option name="LAST_COMMIT_MESSAGE" value="course work" />
   </component>
 </project>
