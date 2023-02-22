@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c02763-24e6-4769-9d24-3317628ff68d" name="Changes" comment="Homework done">
+      <change afterPath="$PROJECT_DIR$/src/Gryffindor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hogwarts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hufflepuff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ravenclaw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Slytherin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pro/sky/java/course1/homework12/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw1.10" />
+        <entry key="$PROJECT_DIR$" value="hw1.13" />
       </map>
     </option>
   </component>
@@ -49,19 +56,10 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pro.sky.java.course1.homework12.Main" />
-      <module name="Homework1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="faculties" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +77,10 @@
       <workItem from="1674587057648" duration="4434000" />
       <workItem from="1674754879488" duration="1658000" />
       <workItem from="1675283633840" duration="3527000" />
-      <workItem from="1675632934426" duration="1238000" />
+      <workItem from="1675632934426" duration="1643000" />
+      <workItem from="1675783215828" duration="30000" />
+      <workItem from="1677006747390" duration="687000" />
+      <workItem from="1677069831914" duration="5721000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1673540029460</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675286899877</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Homework done">
+      <created>1675634467605</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675634467605</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
