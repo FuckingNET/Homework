@@ -6,13 +6,12 @@ import com.skypro.hw2_6.exception.EmployeeNotFoundException;
 import com.skypro.hw2_6.exception.EmployeeStorageIsFullException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class EmployeeService {
     private final int MAX_EMPLOYEES_COUNT = 2;
-    private final List<Employee> employees = new ArrayList<>();
+    private final Map<String, Employee> employees = new HashMap<>();
 
     public Employee add(String firstName, String lastName) {
         if (employees.size() == MAX_EMPLOYEES_COUNT) {
@@ -21,41 +20,33 @@ public class EmployeeService {
 
         Employee employee = new Employee(firstName, lastName);
 
-        if (employees.contains(employee)) {
+        if (employees.containsKey(employee.getFullName())) {
             throw new EmployeeAlreadyAddedException("В массиве уже есть такой сотрудник");
         }
 
-        employees.add(employee);
+        employees.put(employee.getFullName(), employee);
 
         return employee;
     }
 
     public Employee find(String firstName, String lastName) {
-        Employee employee = null;
-        for (Employee e : employees) {
-            if (e != null && firstName.equals(e.getFirstName()) && lastName.equals(e.getLastName())) {
-                employee = e;
-            }
+        Employee employee = new Employee(firstName, lastName);
+        if (employees.containsKey(employee.getFullName())) {
+            return employees.get(employee.getFullName());
         }
-        if (employee == null) {
-            throw new EmployeeNotFoundException("сотрудник не найден");
-        }
-        return employee;
+        throw new EmployeeNotFoundException("сотрудник не найден");
     }
 
     public Employee remove(String firstName, String lastName) {
-        Employee employee = find(firstName, lastName);
+        Employee employee = new Employee(firstName, lastName);
 
-        for (Employee e : employees) {
-            if (e.equals(employee)) {
-                employees.remove(e);
-                break;
-            }
+        if (employees.containsKey(employee.getFullName())) {
+            return employees.remove(employee.getFullName());
         }
-        return employee;
+        throw new EmployeeNotFoundException("сотрудник не найден");
     }
 
-    public List<Employee> getAll() {
-        return employees;
+    public Collection<Employee> getAll() {
+        return Collections.unmodifiableCollection(employees.values());
     }
 }
